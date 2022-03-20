@@ -1,0 +1,15 @@
+{
+  "type": "module",
+  "name": "reddit-video-downloader",
+  "version": "1.0.0",
+  "description": "An application for downloading reddit videos with ease",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "IgnWombat",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.26.1"
+  }
+}
