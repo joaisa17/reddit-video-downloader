@@ -5,6 +5,8 @@ import DownloadFiles from './downloadFiles.js';
 
 import fs from 'fs';
 
+if (!fs.existsSync('videos.txt')) fs.appendFileSync('videos.txt');
+
 const videos = fs.readFileSync('videos.txt').toString().split(/\n/);
 
 var filesDeleted = 0;
