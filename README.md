@@ -12,7 +12,7 @@ An application for downloading reddit videos with ease
 4. All videos should be located in the dump folder
 
 ## Libraries used
-* axios for getting post info
+* axios for getting reddit post info
 * https for file requests
 * fs for file management
 * ffmpeg for compiling video and audio
