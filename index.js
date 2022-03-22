@@ -21,7 +21,7 @@ videos.forEach(async video => {
     if (!info) return;
 
     var fileName = `${info.subreddit.substring(2)}-${info.title}`;
-    if (fs.existsSync(`./dump/${fileName}.mp4`)) fileName += info.id;
+    if (fs.existsSync(`./dump/${fileName}.mp4`)) fileName += '-' + info.id;
 
     fileName = fileName.replace(/[/<>:"/\\|?*]/g, '-');
     if (fileName.endsWith('-')) fileName = fileName.substring(0, fileName.length - 1);
