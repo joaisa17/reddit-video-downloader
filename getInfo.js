@@ -4,8 +4,10 @@ import GetPost from './getPost.js';
 export default async function GetInfo(url) {
     if (typeof url !== 'string') throw new Error(`String expected. Got ${typeof url}`);
 
+    var res;
+
     try {
-        const res = (await axios(`${url}.json`)).data;
+        res = (await axios(`${url}.json`)).data;
     } catch {
         return
     }
