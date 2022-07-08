@@ -7,9 +7,10 @@ An application for downloading reddit videos with ease
 
 ## Usage
 1. Clone the repository to your computer
-2. Leave links to the reddit posts in videos.txt, separated by a new line
-3. Double click download.bat
-4. All videos should be located in the dump folder
+2. Run `npm i` in a terminal CD-ed into the repository directory
+3. Leave links to the reddit posts in videos.txt, separated by a new line
+4. Double click download.bat
+5. All videos should be located in the dump folder
 
 ## Libraries used
 * axios for getting reddit post info
