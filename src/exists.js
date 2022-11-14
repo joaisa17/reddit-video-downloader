@@ -10,7 +10,7 @@ async function stat(path) {
 }
 
 export async function exists(path) {
-    return (await stat(path))?.isDirectory?.();
+    return (await stat(path))?.isFile?.();
 }
 
 export async function dirExists(path) {

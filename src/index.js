@@ -33,9 +33,10 @@ async function awaitLink() {
     });
 
     const [url, optionalTitle] = input.url.split(/ /);
-    if (!url) process.exit();
+    if (!url) return;
 
     const info = await getPostInfo(url);
+    if (!info) return awaitLink();
 
     const videoName = optionalTitle ?? (
         template
