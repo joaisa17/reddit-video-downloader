@@ -5,12 +5,17 @@
   "description": "An application for downloading reddit videos with ease",
   "main": "index.js",
   "scripts": {
+    "start": "node src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "IgnWombat",
   "license": "ISC",
   "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
+    "@ffprobe-installer/ffprobe": "^1.4.1",
     "axios": "^0.26.1",
-    "dotenv": "^16.0.1"
+    "dotenv": "^16.0.1",
+    "fluent-ffmpeg": "^2.1.2",
+    "inquirer": "^9.1.4"
   }
 }

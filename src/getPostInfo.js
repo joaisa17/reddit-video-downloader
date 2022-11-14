@@ -1,7 +1,7 @@
 import axios from 'axios';
 import GetPost from './getPost.js';
 
-export default async function GetInfo(url) {
+export default async function getPostInfo(url) {
     if (typeof url !== 'string') throw new Error(`String expected. Got ${typeof url}`);
 
     var res;
