@@ -33,7 +33,7 @@ async function awaitLink() {
     });
 
     const [url, optionalTitle] = input.url.split(/ /);
-    if (!url) return;
+    if (!url) process.exit();
 
     const info = await getPostInfo(url);
     if (!info) return awaitLink();
@@ -68,10 +68,10 @@ async function awaitLink() {
     ];
 
     ffmpeg()
-        .input(resolvedPaths[0])
+        .addInput(resolvedPaths[0])
         .addInput(resolvedPaths[1])
 
-        .videoCodec('libx265')
+        //.videoCodec('libx265')
 
         .save(videoPath)
         .on('end', async () => {
